@@ -4,8 +4,10 @@ import Header from "./Header";
 const Layout = ({ children }) => {
   return (
     <div>
-      <AnnouncementBar />
-      <Header />
+      <header>
+        {/* <AnnouncementBar /> */}
+        <Header />
+      </header>
       {children}
       <Footer />
     </div>

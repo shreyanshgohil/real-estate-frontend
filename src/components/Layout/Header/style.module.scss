@@ -1,0 +1,12 @@
+.header-link {
+  transition: all 400ms;
+  .header-link--icon {
+    transition: all ease 0.5s;
+  }
+
+  &:hover {
+    .header-link--icon {
+      transform: rotate(360deg);
+    }
+  }
+}

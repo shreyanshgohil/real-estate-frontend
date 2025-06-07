@@ -1,16 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require("tailwindcss/defaultTheme");
+
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: { xs: "475px", xxs: "200px", ...defaultTheme.screens },
-    fontFamily: {
-      sans: ["--font-Plus_Jakarta_Sans", ...fontFamily.sans],
-      headline: ["--font-Plus_Jakarta_Sans", ...fontFamily.sans],
-      body: ["--font-Plus_Jakarta_Sans", ...fontFamily.sans],
-    },
 
     fontSize: {
       xxs: ["0.625rem", { lineHeight: "0.75rem" }], // 10px
@@ -72,10 +67,12 @@ module.exports = {
             500: "#343a40",
             700: "#212529",
             800: "#1a1a1a",
+            900: "#03060E",
           },
           neutral: {
-            DEFAULT: "#1a1a1a",
+            DEFAULT: "#ff4136",
             100: "#f8f9fa",
+            200: "#F6F2F1",
           },
         },
       },
