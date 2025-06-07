@@ -6,7 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import styles from "./style.module.scss";
 const Header = () => {
   return (
-    <div className="container--boxed flex items-center justify-between py-8">
+    <div className="container--boxed flex items-center justify-between py-8 bg-white">
       <div>
         <Link href={"/"}>
           <Image
