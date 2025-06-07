@@ -23,39 +23,73 @@ const Header = () => {
             className={`text-brand-gray-800 flex items-center gap-1 font-medium hover:text-brand-neutral ${styles["header-link"]}`}
           >
             <Link className="after" href={"#"}>
-              Home
+              <span> Home</span>
+            </Link>
+            <i
+              class={`fa-regular fa-angle-down ${styles["header-link--icon"]}`}
+            />
+          </li>
+          <li
+            className={`text-brand-gray-800 flex items-center gap-1 font-medium hover:text-brand-neutral ${styles["header-link"]}`}
+          >
+            <Link className="after" href={"#"}>
+              About Us
             </Link>
             <i
               class={`fa-regular fa-angle-down ${styles["header-link--icon"]}`}
             ></i>
           </li>
-          <li className="text-brand-gray-800 flex items-center gap-1 font-medium">
-            <Link className="after" href={"#"}>
-              About Us
-            </Link>
-            <i class="fa-regular fa-angle-down"></i>
-          </li>
-          <li className="text-brand-gray-800 flex items-center gap-1 font-medium">
+          <li
+            className={`text-brand-gray-800 flex items-center gap-1 font-medium hover:text-brand-neutral ${styles["header-link"]}`}
+          >
             <Link className="after" href={"#"}>
               Property
             </Link>
-            <i class="fa-regular fa-angle-down"></i>
+            <i
+              class={`fa-regular fa-angle-down ${styles["header-link--icon"]}`}
+            ></i>
           </li>
-          <li className="text-brand-gray-800 flex items-center gap-1 font-medium">
+          <li
+            className={`text-brand-gray-800 flex items-center gap-1 font-medium hover:text-brand-neutral ${styles["header-link"]}`}
+          >
             <Link className="after" href={"#"}>
               Agencies
             </Link>
-            <i class="fa-regular fa-angle-down"></i>
+            <i
+              class={`fa-regular fa-angle-down ${styles["header-link--icon"]}`}
+            ></i>
           </li>
-          <li className="text-brand-gray-800 flex items-center gap-1 font-medium">
+          <li
+            className={`text-brand-gray-800 flex items-center gap-1 font-medium hover:text-brand-neutral ${styles["header-link"]}`}
+          >
             <Link className="after" href={"#"}>
               Pages
             </Link>
-            <i class="fa-regular fa-angle-down"></i>
+            <i
+              class={`fa-regular fa-angle-down ${styles["header-link--icon"]}`}
+            ></i>
           </li>
         </ul>
       </div>
-      <div>hello</div>
+      <div className="flex items-center gap-5">
+        <button className="button--primary flex items-center gap-2">
+          <i className="fa-regular fa-house-chimney text-sm relative z-10" />
+          <span className="relative z-10">Add Listing</span>
+        </button>
+        <button
+          className={`flex flex-col items-center rounded-full justify-center ${styles["hamburger__menu"]}`}
+        >
+          <span
+            className={`${styles["hamburger__menu__line"]} ${styles["hamburger__menu__first-line"]}`}
+          />
+          <span
+            className={`${styles["hamburger__menu__line"]} ${styles["hamburger__menu__second-line"]}`}
+          />
+          <span
+            className={`${styles["hamburger__menu__line"]} ${styles["hamburger__menu__third-line"]}`}
+          />
+        </button>
+      </div>
     </div>
   );
 };

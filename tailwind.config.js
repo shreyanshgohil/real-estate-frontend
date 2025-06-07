@@ -6,7 +6,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: { xs: "475px", xxs: "200px", ...defaultTheme.screens },
-
+    fontFamily: {
+      jakarta: ['"Plus Jakarta Sans"', "sans-serif"],
+    },
     fontSize: {
       xxs: ["0.625rem", { lineHeight: "0.75rem" }], // 10px
       xs: ["0.75rem", { lineHeight: "1rem" }], // 12px

@@ -2,11 +2,47 @@
   transition: all 400ms;
   .header-link--icon {
     transition: all ease 0.5s;
+    transform: rotate(0) translateY(2px);
   }
 
   &:hover {
     .header-link--icon {
-      transform: rotate(360deg);
+      transform: rotate(360deg) translateY(2px);
+    }
+  }
+}
+
+.hamburger__menu {
+  gap: 7px;
+  height: 48px;
+  width: 48px;
+  border: 0.5px solid #999999;
+  transition: all 0.3s ease-in-out;
+  &__line {
+    transition: all 0.3s ease-in-out;
+    height: 2px;
+    background-color: #03060e;
+    border-radius: 100px;
+  }
+  &__first-line,
+  &__third-line {
+    width: 17px;
+  }
+  &__second-line {
+    width: 25px;
+  }
+  &:hover {
+    background: #ff4136;
+    border: 0.5px solid #ff4136;
+    .hamburger__menu__line {
+      background-color: #fff;
+    }
+    .hamburger__menu__first-line,
+    .hamburger__menu__third-line {
+      width: 25px;
+    }
+    .hamburger__menu__second-line {
+      width: 17px;
     }
   }
 }
