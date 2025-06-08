@@ -4,7 +4,7 @@ import Header from "./Header";
 const Layout = ({ children }) => {
   return (
     <div>
-      <header>
+      <header className="sticky top-0 left-0 right-0 z-50">
         {/* <AnnouncementBar /> */}
         <Header />
       </header>

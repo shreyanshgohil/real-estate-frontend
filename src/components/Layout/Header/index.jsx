@@ -69,7 +69,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="flex items-center gap-5">
-        <button className="button--primary flex items-center gap-2">
+        <button className="button--primary btn--theme flex items-center gap-2">
           <i className="fa-regular fa-house-chimney text-sm relative z-10" />
           <span className="relative z-10">Add Listing</span>
         </button>

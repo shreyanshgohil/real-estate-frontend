@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./style.module.scss";
+import Image from "next/image";
 const Hero = () => {
   const string = "PILLARREAL ESTATE HOME * REALESTATE";
 
   return (
-    <section>
+    <section className="relative">
       <div>
         <video
           src="/videos/hero-2-video.mp4"
@@ -52,7 +53,53 @@ const Hero = () => {
               Find Your <span className="text-brand-neutral">Perfect Home</span>{" "}
               For Spending Life
             </h1>
-            <div className="bg-white"></div>
+            <div className="bg-white py-4 px-10 flex items-center rounded-full">
+              <div className="flex flex-col">
+                <label htmlFor="" className="text-sm font-semibold">
+                  Property Type
+                </label>
+                <select
+                  name=""
+                  id=""
+                  className="border-none pl-0 text-sm pr-8 focus:outline-none focus:!shadow-none"
+                >
+                  <option value="">Select Make</option>
+                </select>
+              </div>
+              <div className="flex">
+                <div className="flex flex-col">
+                  <label htmlFor="" className="text-sm font-semibold">
+                    Location
+                  </label>
+                  <input
+                    type="text"
+                    className="text-sm p-0 border-none font-medium"
+                    placeholder="Find a location"
+                  />
+                </div>
+                <Image
+                  src={"/images/icons/location-icon.svg"}
+                  alt=""
+                  height={17}
+                  width={17}
+                />
+              </div>
+              <div>
+                <label htmlFor="">Property Type</label>
+                <input type="text" />
+              </div>
+
+              <div className="flex gap-5">
+                <button className="button--primary btn--white flex gap-2 items-center">
+                  <span>Advanced</span>
+                  <i className="fa-solid fa-sliders-up text-sm relative z-10 leading-none" />
+                </button>
+                <button className="button--primary btn--theme flex gap-3 items-center">
+                  <i className="far fa-search text-sm relative z-10 leading-none" />
+                  <span>Search</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
