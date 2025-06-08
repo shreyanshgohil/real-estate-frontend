@@ -1,5 +1,6 @@
 @layer components {
   .heading--h1 {
-    @apply text-7xl font-extrabold leading-tight;
+    @apply text-7xl font-extrabold;
+    line-height: 86px;
   }
 }

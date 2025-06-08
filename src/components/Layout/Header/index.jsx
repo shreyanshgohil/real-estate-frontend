@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./style.module.scss";
 const Header = () => {
   return (
-    <div className="container--boxed flex items-center justify-between py-8 bg-white relative z-50">
+    <div className="container--boxed flex items-center justify-between py-8 bg-white relative z-50 ">
       <div>
         <Link href={"/"}>
           <Image

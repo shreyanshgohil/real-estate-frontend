@@ -1,11 +1,18 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import { heroItems } from "@/constants/home";
 const Hero = () => {
   const string = "PILLARREAL ESTATE HOME * REALESTATE";
 
   return (
-    <section className="relative">
+    <section
+      className="relative"
+      style={{
+        mask: `url("/images/home/hero-2-bg-mask.png")`,
+        maskSize: "100% 100%",
+      }}
+    >
       <div>
         <video
           src="/videos/hero-2-video.mp4"
@@ -53,7 +60,7 @@ const Hero = () => {
               Find Your <span className="text-brand-neutral">Perfect Home</span>{" "}
               For Spending Life
             </h1>
-            <div className="bg-white py-4 px-10 flex items-center rounded-full">
+            <div className="bg-white py-4 px-10 flex items-center rounded-full gap-4 mb-4">
               <div className="flex flex-col">
                 <label htmlFor="" className="text-sm font-semibold">
                   Property Type
@@ -66,6 +73,10 @@ const Hero = () => {
                   <option value="">Select Make</option>
                 </select>
               </div>
+              {/* <span
+                className="mx-4 block"
+                style={{ width: "1px", height: "40px", background: "#D8DDE1" }}
+              /> */}
               <div className="flex">
                 <div className="flex flex-col">
                   <label htmlFor="" className="text-sm font-semibold">
@@ -84,11 +95,21 @@ const Hero = () => {
                   width={17}
                 />
               </div>
-              <div>
-                <label htmlFor="">Property Type</label>
-                <input type="text" />
+              <span />
+              <div className="flex flex-col">
+                <label
+                  htmlFor=""
+                  className="text-sm p-0 border-none font-medium"
+                >
+                  Keyword
+                </label>
+                <input
+                  type="text"
+                  className="p-0 border-none font-medium text-sm"
+                  placeholder="Looking For?"
+                />
               </div>
-
+              <span />
               <div className="flex gap-5">
                 <button className="button--primary btn--white flex gap-2 items-center">
                   <span>Advanced</span>
@@ -99,6 +120,26 @@ const Hero = () => {
                   <span>Search</span>
                 </button>
               </div>
+            </div>
+            <div className="flex gap-4">
+              {heroItems.map((typeOfProperty, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="flex gap-2.5 items-center bg-black px-4 py-1.5 rounded-full"
+                  >
+                    <Image
+                      src={typeOfProperty.image}
+                      width={15}
+                      height={17}
+                      alt={typeOfProperty.title}
+                    />
+                    <span className="text-sm text-white">
+                      {typeOfProperty.title}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
