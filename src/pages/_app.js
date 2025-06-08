@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Plus_Jakarta_Sans } from "next/font/google";
 export const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-figtree",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",

@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "base/reset";
 @import "components/container";
 @import "components/buttton";
-@import "base/reset";
+@import "components/heading";
 @import "vendor/fontawesome.min.css";

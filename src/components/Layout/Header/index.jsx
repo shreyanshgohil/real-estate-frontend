@@ -1,12 +1,9 @@
-import ToolTip from "@/components/Common/ToolTip";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { IoIosArrowForward } from "react-icons/io";
 import styles from "./style.module.scss";
 const Header = () => {
   return (
-    <div className="container--boxed flex items-center justify-between py-8 bg-white">
+    <div className="container--boxed flex items-center justify-between py-8 bg-white relative z-50">
       <div>
         <Link href={"/"}>
           <Image

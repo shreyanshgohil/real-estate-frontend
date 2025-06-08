@@ -1,0 +1,18 @@
+.hero-content {
+  padding-top: 165px;
+  padding-bottom: 265px;
+}
+
+.text-wrapper {
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+    transform-origin: 0 70px;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 0 70px;
+  }
+}
