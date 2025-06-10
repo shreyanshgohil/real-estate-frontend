@@ -1,6 +1,15 @@
 @layer components {
   .heading--h1 {
-    @apply text-7xl font-extrabold;
-    line-height: 86px;
+    @apply text-3xl;
+    @media (min-width: 576px) {
+      // @apply text-4.5xl font-extrabold;
+      // line-height: 86px;
+      @apply text-7xl font-extrabold;
+      line-height: 86px;
+    }
+  }
+  .heading--h2 {
+    @apply text-4.5xl font-bold text-brand-gray-800;
+    line-height: 50px;
   }
 }

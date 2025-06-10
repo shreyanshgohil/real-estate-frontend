@@ -65,6 +65,7 @@ module.exports = {
           },
           gray: {
             DEFAULT: "#343a40",
+
             300: "#6c757d",
             400: "#5b5957",
             500: "#343a40",
@@ -76,6 +77,7 @@ module.exports = {
             DEFAULT: "#ff4136",
             100: "#f8f9fa",
             200: "#F6F2F1",
+            600: "#554B4B",
           },
         },
       },

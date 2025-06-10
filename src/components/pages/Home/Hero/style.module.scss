@@ -6,6 +6,21 @@
 .text-wrapper {
   animation: rotateText 10s linear infinite;
 }
+
+.mouse-icon {
+  transition: all ease 0.4s;
+  &:hover {
+    @apply bg-brand-neutral;
+    span {
+      @apply bg-white;
+    }
+  }
+  span {
+    animation: jumpAni 5s linear infinite;
+    transition: all ease 0.4s;
+  }
+}
+
 @keyframes rotateText {
   0% {
     transform: rotate(360deg);
@@ -14,5 +29,17 @@
   100% {
     transform: rotate(0deg);
     transform-origin: 0 70px;
+  }
+}
+
+@keyframes jumpAni {
+  0% {
+    transform: translateY(4px) translateX(-50%);
+  }
+  40% {
+    transform: translateY(34px) translateX(-50%);
+  }
+  100% {
+    transform: translateY(4px) translateX(-50%);
   }
 }
