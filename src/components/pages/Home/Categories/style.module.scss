@@ -1,4 +1,41 @@
 .property-type {
   height: 164px;
   width: 220px;
+  border-color: #e4e4e5;
+  transition: all 0.4s ease-in-out;
+  .property-type__icon {
+    border-color: #e4e4e5;
+    height: 100px;
+    width: 100px;
+    transition: all 0.4s ease-in-out;
+    img {
+      transition: all 0.4s ease-in-out;
+    }
+    &::before {
+      content: " ";
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      background: #ff4136;
+      opacity: 0.6;
+      border-radius: 50%;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  &:hover {
+    @apply border-brand-neutral;
+    .property-type__icon {
+      @apply border-brand-neutral;
+      img {
+        transform: rotateY(180deg);
+        filter: invert(1);
+      }
+      &::before {
+        @apply bg-brand-neutral h-full w-full right-0 left-0 top-0 bottom-0 opacity-100;
+      }
+    }
+  }
 }

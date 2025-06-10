@@ -26,7 +26,7 @@ const Categories = () => {
             Choose Your Property Type
           </h2>
           <Swiper
-            spaceBetween={24}
+            spaceBetween={23}
             slidesPerView={"auto"}
             loop={true}
             // autoplay={{
@@ -38,15 +38,13 @@ const Categories = () => {
             {[...ChooseYourPropertyType, ...ChooseYourPropertyType].map(
               (singleProperty, index) => {
                 return (
-                  <SwiperSlide key={index} className="!w-auto pt-12">
+                  <SwiperSlide key={index} className="!w-auto pt-14">
                     <Link
                       href={singleProperty.url}
-                      className={`flex flex-col items-center px-7 pb-8 pt-12 bg-white border border-solid rounded-lg relative ${styles["property-type"]}`}
-                      style={{ borderColor: "#E4E4E5" }}
+                      className={` flex flex-col items-center px-7 pb-8 pt-12 bg-white border border-solid rounded-lg relative ${styles["property-type"]}`}
                     >
                       <div
-                        className="w-24 h-24 flex items-center justify-center rounded-full border  border-solid top-0 bg-white absolute -translate-y-1/2"
-                        style={{ borderColor: "#E4E4E5" }}
+                        className={`flex items-center justify-center rounded-full border  border-solid top-0 bg-white absolute -translate-y-1/2 ${styles["property-type__icon"]}`}
                       >
                         <Image
                           src={singleProperty.image}
